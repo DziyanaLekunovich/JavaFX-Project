@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.zd5_lekunovich.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane prefHeight="321.0" prefWidth="487.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#49535b" height="566.0" layoutX="-48.0" layoutY="-19.0" stroke="#49535b" strokeType="INSIDE" width="652.0" />
+            <RadioButton fx:id="redB" layoutX="113.0" layoutY="52.0" mnemonicParsing="false" />
+            <RadioButton fx:id="greenB" layoutX="113.0" layoutY="85.0" mnemonicParsing="false" />
+            <RadioButton fx:id="blueB" layoutX="113.0" layoutY="117.0" mnemonicParsing="false" />
+            <Rectangle fx:id="redColor" arcHeight="5.0" arcWidth="5.0" fill="RED" height="18.0" layoutX="25.0" layoutY="52.0" stroke="RED" strokeType="INSIDE" width="75.0" />
+            <Rectangle fx:id="greenColor" arcHeight="5.0" arcWidth="5.0" fill="#00b018" height="18.0" layoutX="25.0" layoutY="85.0" stroke="#00b018" strokeType="INSIDE" width="75.0" />
+            <Rectangle fx:id="blueColor" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="18.0" layoutX="25.0" layoutY="117.0" stroke="BLUE" strokeType="INSIDE" width="75.0" />
+            <Label layoutX="25.0" layoutY="181.0" prefHeight="17.0" prefWidth="16.0" text="x :" />
+            <MenuButton layoutX="51.0" layoutY="177.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" fx:id="xButton">
+               <items>
+                   <MenuItem mnemonicParsing="false" onAction="#changeX" text="0" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeX" text="1" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeX" text="2" />
+                   <MenuItem mnemonicParsing="false" onAction="#changeX" text="3" />
+                   <MenuItem mnemonicParsing="false" onAction="#changeX" text="4" />
+                   <MenuItem mnemonicParsing="false" onAction="#changeX" text="5" />
+                   <MenuItem mnemonicParsing="false" onAction="#changeX" text="6" />
+               </items>
+            </MenuButton>
+            <Label layoutX="25.0" layoutY="237.0" text="y :" />
+            <MenuButton fx:id="yButton" layoutX="51.0" layoutY="233.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="0" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="1" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="2" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="3" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="4" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="5" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeY" text="6" />
+              </items>
+            </MenuButton>
+            <Button layoutX="48.0" layoutY="290.0" mnemonicParsing="false" onAction="#wsatwKwadrat" text="Wstaw" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="483.0" layoutX="144.0" layoutY="16.0" stroke="BLACK" strokeType="INSIDE" width="409.0" />
+            <Canvas fx:id="kanwa" height="483.0" layoutX="144.0" layoutY="16.0" width="409.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
